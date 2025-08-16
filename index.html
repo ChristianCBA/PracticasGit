@@ -34,6 +34,9 @@
     });
     document.getElementById('cta-cancelar').addEventListener('click', function() {
         window.close();
+        if (!window.closed) {
+            alert('Por razones de seguridad, el navegador no permite cerrar esta página automáticamente. Puede cerrar la pestaña manualmente.');
+        }
     });
 </script>
 </body>
