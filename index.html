@@ -25,12 +25,15 @@
     <!-- Botones para Call to Action -->
     <div>
         <button>Aceptar</button>
-        <button>Cancelar</button>
+        <button id="cta-cancelar">Cancelar</button>
     </div>
 
 <script>
     document.getElementById('btn-cancelar').addEventListener('click', function() {
         document.getElementById('form-contacto').reset();
+    });
+    document.getElementById('cta-cancelar').addEventListener('click', function() {
+        window.close();
     });
 </script>
 </body>
