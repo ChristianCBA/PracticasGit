@@ -27,10 +27,11 @@
     <!-- Formulario de contacto -->
     <div>
         <label><strong>Subscribirse</strong></label>
-        <form>
+        <form id="form-contacto">
             <input type="text" name="nombre" placeholder="Nombre" required>
             <input type="password" name="contrasena" placeholder="Contraseña" required>
             <button type="submit">Enviar</button>
+            <button type="button" id="btn-cancelar">Cancelar</button>
         </form>
     </div>
     <!-- Botones para Call to Action -->
@@ -39,5 +40,10 @@
         <button>Cancelar</button>
     </div>
 
+<script>
+    document.getElementById('btn-cancelar').addEventListener('click', function() {
+        document.getElementById('form-contacto').reset();
+    });
+</script>
 </body>
 </html>
